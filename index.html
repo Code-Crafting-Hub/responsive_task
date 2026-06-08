@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive task</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-absolute-wrapper">
+      <nav
+        class="flex justify-between px-4 items-center h-[60px] bg-white rounded-2xl border"
+      >
+        <div class="flex gap-5 max-md:hidden">
+          <a href="#" class="nav-left hov"
+            >Shop <i class="ri-arrow-down-s-line"></i
+          ></a>
+          <a href="#" class="nav-left hov"
+            >Learn <i class="ri-arrow-down-s-line"></i
+          ></a>
+          <a href="#" class="nav-left flex gap-1 items-center"
+            >Reviews
+            <div class="star"></div
+          ></a>
+        </div>
+        <div class="min-md:hidden h-[90%] flex items-center">
+          <i class="ri-menu-line"></i>
+        </div>
+        <div>
+          <img
+            src="https://www.twoleavestea.com/cdn/shop/files/Twoleaves_logo.svg?v=1768205424&width=420"
+            alt=""
+          />
+        </div>
+        <div class="flex nav-right items-center md:w-[35%]">
+          <div class="max-md:hidden flex justify-between w-full">
+            <a href="">MY ACCOUNT</a>
+            <a href="">CAFE & WHOLESALE PARTNERS</a>
+            <a href="">TEA JOURNALS</a>
+          </div>
+          <div class="shop-bag"><i class="ri-shopping-bag-line"></i></div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="freeShipping">Free US shipping for orders over $75</div>
+    <section class="section1">
+      <div>
+        <h1>Meet Your Matcha</h1>
+        <p>
+          Whether your mornings are more grab-and-go or intentional and slow, we
+          have matcha and matcha lattes for every ritual.
+        </p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+
+    <section class="section2 border-t">
+      <p>
+        A <span class="italic">great</span> cup starts with a careful pluck -
+        the top two leaves and a bud.
+      </p>
+    </section>
+    <h2 class="best-seller-heading">BEST SELLERS</h2>
+    <section class="section3" id="scrollContent">
+      <div class="sec3">
+        <div class="sec3-img">
+          <div class="sec3-bg-img">
+            <img
+              src="https://www.twoleavestea.com/cdn/shop/files/organic_tropical_green_tea_sachet_featured.webp"
+              alt=""
+            />
+          </div>
+          <div class="sec3-ho-img">
+            <div class="sec3-tea">TEA SACHETS</div>
+            <div class="sec3-rate">
+              <i class="ri-star-s-fill"></i> 4.71 (84)
+            </div>
+            <div class="sec3-add">
+              <div>+</div>
+              <div>ADD</div>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-detail">
+          <h3>Organic Tropical Green Tea</h3>
+          <p>From $11.95</p>
+          <p>
+            Our Organic Tropical Green Tea is a fruity and fun take on a classic
+            green tea.
+          </p>
+        </div>
+      </div>
+      <div class="sec3">
+        <div class="sec3-img" style="background-color: blanchedalmond">
+          <div class="sec3-bg-img">
+            <img
+              src="https://www.twoleavestea.com/cdn/shop/files/bundle-herbal-tea-trio-featured-image.webp"
+            />
+          </div>
+          <div class="sec3-ho-img">
+            <div class="sec3-tea">GIFTS & SAMPLERS</div>
+            <div class="sec3-rate"><i class="ri-star-s-fill"></i> 5 (2)</div>
+            <div class="sec3-add">
+              <div>+</div>
+              <div>ADD</div>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-detail">
+          <h3>Herbal Tea Trio</h3>
+          <p>From $33.30</p>
+          <p>A trio of something herbal teas</p>
+        </div>
+      </div>
+      <div class="sec3">
+        <div class="sec3-img" style="background-color: rgb(75, 211, 146)">
+          <div class="sec3-bg-img">
+            <img
+              src="https://www.twoleavestea.com/cdn/shop/files/peppermint_naked_featured.webp"
+              alt=""
+            />
+          </div>
+          <div class="sec3-ho-img">
+            <div class="sec3-tea">NAKED SACHETS</div>
+            <div class="sec3-rate"><i class="ri-star-s-fill"></i> 5 (11)</div>
+            <div class="sec3-add">
+              <div>+</div>
+              <div>ADD</div>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-detail">
+          <h3>Organic Tropical Green Tea</h3>
+          <p>From $21.95</p>
+          <p>
+            Our Organic Peppermint tea is made form peppermint grown in
+            Washington State.
+          </p>
+        </div>
+      </div>
+      <div class="sec3">
+        <div class="sec3-img" style="background-color: #c3dcfc">
+          <div class="sec3-bg-img">
+            <img
+              src="https://www.twoleavestea.com/cdn/shop/files/Bamboo_Tea_Chest.webp"
+              alt=""
+            />
+          </div>
+          <div class="sec3-ho-img">
+            <div class="sec3-tea">GIFT & SAMPLERS</div>
+            <div class="sec3-rate">
+              <i class="ri-star-s-fill"></i> 4.85 (41)
+            </div>
+            <div class="sec3-add">
+              <div>+</div>
+              <div>ADD</div>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-detail">
+          <h3>Classic Bamboo Tea Chest</h3>
+          <p>From $42.95</p>
+          <p>
+            This is 6-slot bamboo box offers a sampling of eight sachets each of
+            six of our best selling teas.
+          </p>
+        </div>
+      </div>
+      <div class="sec3">
+        <div class="sec3-img" style="background-color: #cde793">
+          <div class="sec3-bg-img">
+            <img
+              src="https://www.twoleavestea.com/cdn/shop/files/Latte_Mix.webp"
+              alt="Nice Matcha Tea Latte Mix"
+            />
+          </div>
+          <div class="sec3-ho-img">
+            <div class="sec3-tea">LATTE MIX</div>
+            <div class="sec3-rate"><i class="ri-star-s-fill"></i> 4.3 (23)</div>
+            <div class="sec3-add">
+              <div>+</div>
+              <div>ADD</div>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-detail">
+          <h3>Nice Matcha Tea Latte Mix</h3>
+          <p>From $12.95</p>
+          <p>
+            Our Nice Matcha is a lightly sweetened powered mix ment for making
+            tea lattes simple.
+          </p>
+        </div>
+      </div>
+      <div class="sec3">
+        <div class="sec3-img" style="background-color: #fcdaa2">
+          <div class="sec3-bg-img">
+            <img
+              src="https://www.twoleavestea.com/cdn/shop/files/Latte_Mix_b400f40c-730f-4122-9058-cfc4e5bf8faf.webp"
+              alt=""
+            />
+          </div>
+          <div class="sec3-ho-img">
+            <div class="sec3-tea">LATTE MIX</div>
+            <div class="sec3-rate">
+              <i class="ri-star-s-fill"></i> 4.28 (18)
+            </div>
+            <div class="sec3-add">
+              <div>+</div>
+              <div>ADD</div>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-detail">
+          <h3>Nice Chai Tea Latte Mix</h3>
+          <p>From $12.95</p>
+          <p>
+            Our Nice Chai is a not too sweet, not too spicy, powdered latte mix
+            meant for making tea lattes simple.
+          </p>
+        </div>
+      </div>
+      <div class="sec3">
+        <div class="sec3-img" style="background-color: #f6d2c4">
+          <div class="sec3-bg-img">
+            <img
+              src="https://www.twoleavestea.com/cdn/shop/files/organic_high_mountain_chai_tea_sachet_featured.webp"
+              alt=""
+            />
+          </div>
+          <div class="sec3-ho-img">
+            <div class="sec3-tea">TEA SACHETS</div>
+            <div class="sec3-rate">
+              <i class="ri-star-s-fill"></i> 4.79 (108)
+            </div>
+            <div class="sec3-add">
+              <div>+</div>
+              <div>ADD</div>
+            </div>
+          </div>
+        </div>
+        <div class="sec3-detail">
+          <h3>Organic Mountain High Chai Tea</h3>
+          <p>From $11.95</p>
+          <p>
+            An ode to our Rocky Mountain roots, our organic Mountain High Chai
+            takes your tastebuds down a spice-filled ski slope.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="scroll-btn">
+      <div class="btn-scroll">
+        <button onclick="scrollContainer(-200)"><</button>
+        <button onclick="scrollContainer(200)">></button>
+      </div>
+      <div class="explore-all">
+        <button>Explore All Teas</button>
+      </div>
+    </div>
+    <section class="section4">
+      <h3>DISCOVER</h3>
+      <p class="sec4-p1" style="margin-top: 20px">
+        Let’s find a cup that fits the <em>moment</em>.
+      </p>
+      <p class="sec4-p1">What are you searching for?</p>
+      <div>
+        <input
+          type="text"
+          class="focus:outline-none"
+          placeholder="herbal tea"
+        />
+      </div>
+      <p style="margin: 10px; font-size: 14px">OR EXPLORE BY VIBE...</p>
+      <div class="explore-vibes">
+        <div>A Sweet Treat</div>
+        <div>Evening Unwind</div>
+        <div>Focused & Clear</div>
+        <div>Caffine!</div>
+        <div>Caffine-Free</div>
+        <div>Ceremony-worthy</div>
+        <div>Whole Leaf</div>
+        <div>Over Ice</div>
+        <div>Lattes</div>
+        <div>Black Tea</div>
+        <div>Green Tea</div>
+        <div>Herbal Tea</div>
+        <div>Organic</div>
+        <div>Barista Favourite</div>
+        <div>Calm & Cozy</div>
+        <div>Fruit Forward</div>
+      </div>
+    </section>
+
+    <section class="green-forest">
+      <div class="green-forest1"><img src="https://www.twoleavestea.com/cdn/shop/files/From_farm_to_kettle_c340e18e-6549-4712-b2b1-b64a827e6338.svg" alt=""></div>
+      <div class="green-forest2">
+        BORN IN <br> COLORADO
+      </div>
+      <div class="green-forest-para">
+        Our founder, Richard, started Two Leaves and a Bud in pursuit of a truly great cup. Two decades later, that same care and curiosity guide everything we make.
+      </div>
+      <div class="green-forest-planet">
+        <img src="https://www.twoleavestea.com/cdn/shop/files/Quality_without_pretense.svg" alt="">
+        <img src="https://www.twoleavestea.com/cdn/shop/files/care_for_ppl_1.svg" alt="">
+        <img src="https://www.twoleavestea.com/cdn/shop/files/transparent_sourcing.svg" alt="">
+      </div>
+      <button>Our Story</button>
+    </section>
+
+    <section class="review">
+      <h4>REVIEWS</h4>
+      <p>Loved by tea people everywhere. <br> Here's what they're saying.</p>
+    </section>
+
+    <section class="review-cards">
+      <div class="review-card-inner">
+        <div class="review-card-t">
+          <p class="review-card-detail">"The right amount of spice."</p>
+          <p class="review-card-author">Angelina R.</p>
+        </div>
+        <div class="review-card-b">
+          <div class="flex items-center"><img src="https://www.twoleavestea.com/cdn/shop/files/Organic-Mtn-High-Chai-R15-angle_square_KO_1_2.png?v=1770086173&amp;width=120" alt=""></div>
+          <p>ORGANIC MOUNTAIN HIGH CHAI</p>
+          <button>Shop</button>
+        </div>
+      </div>
+      <div class="review-card-inner" style="background-color: rgb(126, 255, 126);">
+        <div class="review-card-t">
+          <p class="review-card-detail">"The right amount of spice."</p>
+          <p class="review-card-author">Angelina R.</p>
+        </div>
+        <div class="review-card-b" style="background-color: rgb(75, 230, 75);">
+          <div class="flex items-center"><img src="https://www.twoleavestea.com/cdn/shop/files/Organic-Mtn-High-Chai-R15-angle_square_KO_1_2.png?v=1770086173&amp;width=120" alt=""></div>
+          <p>ORGANIC MOUNTAIN HIGH CHAI</p>
+          <button>Shop</button>
+        </div>
+      </div>
+      <div class="review-card-inner">
+        <div class="review-card-t">
+          <p class="review-card-detail">"The right amount of spice."</p>
+          <p class="review-card-author">Angelina R.</p>
+        </div>
+        <div class="review-card-b">
+          <div class="flex items-center"><img src="https://www.twoleavestea.com/cdn/shop/files/Organic-Mtn-High-Chai-R15-angle_square_KO_1_2.png?v=1770086173&amp;width=120" alt=""></div>
+          <p>ORGANIC MOUNTAIN HIGH CHAI</p>
+          <button>Shop</button>
+        </div>
+      </div>
+      <div class="review-card-inner">
+        <div class="review-card-t">
+          <p class="review-card-detail">"The right amount of spice."</p>
+          <p class="review-card-author">Angelina R.</p>
+        </div>
+        <div class="review-card-b">
+          <div class="flex items-center"><img src="https://www.twoleavestea.com/cdn/shop/files/Organic-Mtn-High-Chai-R15-angle_square_KO_1_2.png?v=1770086173&amp;width=120" alt=""></div>
+          <p>ORGANIC MOUNTAIN HIGH CHAI</p>
+          <button>Shop</button>
+        </div>
+      </div>
+      <div class="review-card-inner">
+        <div class="review-card-t">
+          <p class="review-card-detail">"The right amount of spice."</p>
+          <p class="review-card-author">Angelina R.</p>
+        </div>
+        <div class="review-card-b">
+          <div class="flex items-center"><img src="https://www.twoleavestea.com/cdn/shop/files/Organic-Mtn-High-Chai-R15-angle_square_KO_1_2.png?v=1770086173&amp;width=120" alt=""></div>
+          <p>ORGANIC MOUNTAIN HIGH CHAI</p>
+          <button>Shop</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot1">
+        <div>
+          <p style="font-size: 20px; margin: 10px 0;"><b>STEEP WITH US</b></p>
+          <p style="font-size: 18px;">
+            Get news stories, brewing tips, and special offers straight to your
+            inbox.
+          </p>
+        </div>
+        <div class="flex flex-col md:w-[30%] ">
+          <input
+            type="text"
+            placeholder="name@email.com"
+            class="focus:outline-none"
+          />
+          <button>Submit</button>
+        </div>
+        <div class="flex gap-[8px]">
+          <div class="foot-social"><i class="ri-facebook-circle-fill"></i></div>
+          <div class="foot-social"><i class="ri-instagram-fill"></i></div>
+          <div class="foot-social"><i class="ri-linkedin-box-fill"></i></div>
+        </div>
+      </div>
+
+      <div class="foot-links">
+        <div class="foot-link-heading">
+          <h3>Tea Varients</h3>
+          <p>Whole Leaf Tea Sachets</p>
+          <p>Pure Matcha</p>
+          <p>Tea Lattes</p>
+          <p>Iced Tea</p>
+        </div>
+        <div class="foot-link-heading">
+          <h3>Collections</h3>
+          <p>Matcha</p>
+          <p>Chai</p>
+          <p>Organic Tea</p>
+          <p>Naked Tea Sachets</p>
+          <p>Black Tea</p>
+          <p>Green Tea</p>
+          <p>Herbal Tea</p>
+          <p>Caffine-Free</p>
+          <p>Gift & Samplers</p>
+        </div>
+        <div class="foot-link-heading">
+          <h3>Lattes</h3>
+          <p>Nice Matcha</p>
+          <p>Barista Matcha</p>
+          <p>Nice Chai</p>
+          <p>Barista Chai</p>
+          <p>Two Roots Golden Latte</p>
+        </div>
+        <div class="foot-link-heading">
+          <h3>Learn</h3>
+          <p>Our Story</p>
+          <p>Our Spirit</p>
+          <p>FAQ</p>
+          <p>Raviews</p>
+        </div>
+        <div class="foot-link-heading">
+          <h3>Tea Journal</h3>
+          <p>All Articals</p>
+          <p>Tea 101</p>
+          <p>Recipes</p>
+          <p>Sustainability</p>
+        </div>
+        <div class="foot-link-heading">
+          <h3>Support</h3>
+          <p>Contact</p>
+          <p>My Account</p>
+          <p>Loyal-Tea</p>
+          <p>Shipping & Returns</p>
+          <p>Privacy Policy</p>
+          <p>Terms & Conditions</p>
+        </div>
+        <div class="foot-link-heading">
+          <h3>Cafe & Wholesale Partners</h3>
+          <p>Cafe & Wholesale Partners</p>
+          <p>Wholesale Login</p>
+          <p>Product and Media Files</p>
+          <p>Displays & Starter Kits</p>
+        </div>
+   
+
+      </div>
+
+      <div class="foot-bottom">
+        <div><img src="https://www.twoleavestea.com/cdn/shop/files/Twoleaves_logo.svg" alt=""></div>
+        <div class="text-center">&copy; TWO LEAVES AND A BUD 2026 <br> SITE BY MANUFACTURE </div>
+      </div>
+
+    </footer>
+
+    <div class="person-fix">
+      <div class="person-fix2"><i class="ri-check-line"></i></div>
+      <div class="person-fix1"><i class="ri-user-5-fill"></i></div>
+    </div>
+
+    <script>
+      function scrollContainer(distance) {
+        const container = document.getElementById("scrollContent");
+        container.scrollBy({
+          left: distance,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </body>
+</html>

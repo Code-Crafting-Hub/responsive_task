@@ -1,0 +1,666 @@
+:root {
+  --font1: "RecklessCondensed", "Georgia", arial, serif;
+  --navy: #2a2857;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+html,
+body {
+  width: 100%;
+}
+body{
+  background-color: #fffaec;
+}
+
+/* Navbar */
+ .nav-absolute-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+nav {
+  position: sticky;
+  top: 0;
+  font-size: 14px;
+  padding: 0 16px;
+  margin: 30px 30px;
+
+  animation: navv linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0px 80px;
+}
+@keyframes navv {
+  to {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+.hov i {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: 1px solid black;
+  border-radius: 100%;
+  background-color: #c0dbff;
+}
+.hov:hover i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellow;
+  transition: all ease 0.5s;
+  transform: rotate(180deg);
+}
+.nav-left {
+  font-family: var(--font1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-right a {
+  font-size: 12px;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+.ri-menu-line {
+  font-size: 20px;
+  font-weight: 500;
+}
+.star {
+  height: 20px;
+  width: 20px;
+  font-size: 12px;
+  border: 1px solid black;
+  color: black;
+  background-color: orangered;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.ri-shopping-bag-line {
+  font-size: 28px;
+}
+.shop-bag {
+  margin-left: auto;
+}
+
+/* free shipping */
+.freeShipping {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  background-color: var(--navy);
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 0px;
+  text-transform: uppercase;
+}
+
+/* image section */
+.section1 {
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://www.twoleavestea.com/cdn/shop/files/cere-memorial_matcha_wide.png?v=1779304660&amp;width=1800");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.section1 div{
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section1 div h1{
+    font-size: 4.5vw;
+    font-family: var(--font1);
+    width: 40%;
+}
+.section1 div p{
+    width: 52%;
+}
+.section1 div button{
+    background-color: var(--navy);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 35%;
+}
+
+@media (max-width:768px) {
+    .section1 div h1{
+        width: 100%;
+        text-align: center;
+        font-size: 8vw;
+    }
+    .section1 div p{
+        width: 100%;
+        text-align: center;
+    }
+    .section1 div button{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.section2{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.section2 p{
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: var(--font1);
+    padding: 20vw;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.838);
+}
+@media (max-width:768px) {
+  .section2 p{
+    padding: 10vw;
+    font-size: 5vw;
+  }
+}
+
+.best-seller-heading{
+    background-color: #daaeea;
+    width: fit-content;
+    padding: 0 5px;
+    border-radius: 10px;
+    font-size: 30px; 
+    font-weight: 600;
+    border: 1px solid black;
+    margin: auto;
+    transform: rotate(-2deg);
+}
+
+.section3{
+  display: flex;
+  flex-shrink: 0 0 auto;
+  margin: 35px 20px;
+  overflow: auto;
+  gap: 20px;
+  height: 550px;
+   &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+.sec3{
+  height: 500px;
+  width: 300px;
+  min-width: 300px;
+}
+.sec3:hover img{
+  transition: all ease 0.5s;
+  transform: scale(1.1);
+}
+.sec3-img{
+  height: 70%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(157, 214, 72);
+  position: relative;
+  z-index: 30;
+}
+.sec3-ho-img{
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 30;
+}
+.sec3-tea{
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-weight: 550;
+}
+.sec3-rate{
+  margin: 13px;
+}
+.sec3-add{
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 95%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 80%;
+  font-size: 16px;
+  z-index: 30;
+}
+.sec3-detail{
+  color: rgb(45, 41, 41);
+}
+.sec3-detail h3{
+  font-family: var(--font1);
+  font-size: 22px;
+  font-weight: 100;
+  margin: 3px 0;
+}
+.sec3-detail p{
+  margin: 2px;
+  font-size: 16px;
+}
+.btn-scroll{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+.btn-scroll button{
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.explore-all{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding-bottom: 40px;
+  border-bottom: 1px solid black;
+}
+.explore-all button{
+  background-color: var(--navy);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.section4{
+  padding: 10vw 20vw;
+}
+.section4 h3{
+  background-color: rgb(226, 87, 6);
+  width: fit-content;
+  padding: 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 24px;
+  transform: rotate(-5deg);
+}
+.sec4-p1{
+  font-family: var(--font1);
+  font-size: 3vw;
+}
+.section4 input{
+  background-color: rgb(239, 239, 239);
+  height: 60px;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 40px 0;
+  border: 1px solid black;
+}
+.explore-vibes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.explore-vibes div{
+  background-color: #c0dbff;
+  font-family: var(--font1);
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.explore-vibes div:hover{
+  background-color: #a6c9f7;
+}
+@media (max-width:768px) {
+  .section4{
+    padding: 20px;
+  }
+  .sec4-p1{
+    font-size: 20px;
+  }
+  .section4 input{
+    width: 100%;
+  }
+}
+
+/* Green Forest */
+
+.green-forest{
+  background-image: url("https://www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&amp;width=1800");
+  color: white;
+}
+.green-forest1 img{
+  width: 150px;
+  margin-left: 85%;
+}
+.green-forest2{
+  font-size: 10vw;
+  text-align: center;
+  line-height: normal;
+  margin: 150px 0;
+}
+.green-forest-para{
+  font-size: 2vw;
+  text-align: center;
+  padding: 0 20%;
+}
+.green-forest-planet{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 180px 0;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.green-forest-planet img{
+  width: 120px;
+}
+.green-forest button{
+  background-color: white;
+  color: black;
+  width: 30%;
+  border-radius: 30px;
+  font-size: 24px;
+  margin-left: calc(100% - 65%);
+  margin-bottom: 100px;
+  font-weight: 550;
+}
+.green-forest button:hover{
+  background-color: var(--navy);
+  color: white;
+}
+@media (max-width:768px) {
+  .green-forest1 img{
+    margin-left: 50%;
+    width: 120px;
+  }
+  .green-forest2{
+    font-size: 40px;
+  }
+  .green-forest-para{
+    font-size: 20px;
+  }
+  .green-forest button{
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 80px;
+  }
+}
+
+.review{
+  margin: 100px 20%;
+}
+.review h4{
+  font-size: 28px;
+  font-weight: 600;
+  background-color: forestgreen;
+  width: fit-content;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transform: rotate(-3deg);
+}
+.review p{
+  margin-top: 10px;
+  font-family: var(--font1);
+  font-size: 40px;
+}
+@media (max-width:768px) {
+  .review{
+    margin: 50px 10%;
+  }
+  .review p{
+    font-size: 20px;
+  }
+}
+
+.review-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.review-card-inner{
+  height: 400px;
+  width: 280px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(253, 165, 155);
+  padding: 20px;
+}
+.review-card-t{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+.review-card-detail{
+  font-family: var(--font1);
+  font-size: 30px;
+  text-align: center;
+}
+.review-card-author{
+  color: #2a2857;
+}
+.review-card-b{
+  border: 1px solid black;
+  height: 70px;
+  border-radius: 10px;
+  background-color:  rgb(254, 114, 98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-card-b div{
+  width: 30%;
+  border-right: 1px solid black;
+  height: 100%;
+}
+
+.review-card-b p{
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.review-card-b button{
+  background-color: white;
+  padding: 2px 8px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+/* Footer */
+footer{
+  background-color: #a6c9f7;
+  height: max-content;
+  padding: 40px;
+}
+.foot1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.foot1 h3{
+  font-weight: 600;
+}
+.foot1 p{
+  font-family: var(--font1);
+}
+.foot1 div input{
+  height: 30px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+.foot1 div button{
+  background-color: var(--navy);
+  color: white;
+  width: fit-content;
+  padding: 10px 40px;
+  margin: 20px auto;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.foot-social i{
+  font-size: 25px;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+.foot-social i:hover{
+  background-color: white;
+}
+.foot-links{
+  background-color: var(--navy);
+  color: white;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  flex-shrink: 0;
+}
+.foot-link-heading h3{
+  font-family: var(--font1);
+  font-size: 32px;
+}
+.foot-link-heading p{
+  font-size: 18px;
+  color: rgb(206, 206, 206);
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+.foot-link-heading p:hover{
+  color: white;
+}
+.foot-bottom{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("https://www.twoleavestea.com/cdn/shop/files/footer-extended_1.png?v=1771834074");
+  background-position: center;
+  background-size: cover;
+}
+.foot-bottom img{
+  height: 10vh;
+  margin-top: 30px;
+}
+@media (max-width:768px) {
+  footer{
+    padding: 10px;
+  }
+  .foot1{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .foot1 p{
+    margin-top: 10px;
+  }
+  .foot-social{
+    margin-bottom: 10px;
+  }
+  .foot-links{
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+  .foot-link-heading{
+    border-bottom: 1px solid white;
+    margin: 10px 0;
+    padding-bottom: 10px;
+  }
+  .foot-link-heading h3{
+    font-size: 20px;
+  }
+  .foot-link-heading p{
+    font-size: 16px;
+  }
+}
+
+.person-fix{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+}
+.person-fix1{
+  font-size: 20px;
+  color: white;
+  border-radius: 100%;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+.person-fix2{
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: -15px;
+  margin-top: 20px;
+  z-index: 1002;
+}
