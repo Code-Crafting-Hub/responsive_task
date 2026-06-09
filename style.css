@@ -484,7 +484,7 @@ nav {
 }
 .review-card-detail{
   font-family: var(--font1);
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 .review-card-author{
@@ -516,6 +516,67 @@ nav {
   border-radius: 30px;
   margin-right: 10px;
 }
+
+/* Good comapny */
+.good-company{
+  width: 100%;
+  position: relative;
+}
+.good-company-img img{
+  width: 100%;
+  
+}
+.good-company-banner{
+  position: absolute;
+  top: 0;
+  width: 30%;
+  height: 90%;
+  margin: 30px;
+  background-color: orangered;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+  color: white;
+}
+.good-company-banner h4{
+  font-family: var(--font1);
+  font-size: 50px;
+}
+.good-company-banner p{
+  font-size: 20px;
+}
+.good-company-banner button{
+  background-color: white;
+  color: black;
+  padding: 4px 40px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  font-weight: 100;
+}
+
+@media (max-width:768px) {
+  .good-company-banner{
+    position: static;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+    margin: 0;
+    padding: 3%;
+  }
+  .good-company-banner h4{
+    font-size: 8vw;
+  }
+  .good-company-banner p{
+    margin: 20px 0;
+    font-size: 4vw;
+  }
+}
+
 
 /* Footer */
 footer{
